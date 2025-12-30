@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# OPTIXPRO
 
-## Project info
+**Institutional-Grade Options Trading Intelligence System**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+OPTIXPRO is a sophisticated reasoning engine and dashboard designed to provide professional traders with data-driven strategy recommendations, market regime analysis, and active trade monitoring. It is not a signal bot, but a strategic decision support system that prioritizes capital preservation and auditability.
 
-## How can I edit this code?
+## 🚀 Core Features
 
-There are several ways of editing your application.
+- **Market Regime Analysis**: Automatically classifies market conditions (Volatility, Structure, Direction) to determine optimal engagement.
+- **Strategic Reasoning Engine**: Deterministic logic that recommends defined-risk strategies (Iron Condor, Iron Butterfly, Credit Spreads) based on current regime.
+- **Active Trade Monitoring**: Continuously evaluates open positions for thesis breaks, breach conditions, and profit targets.
+- **Post-Trade Autopsy**: Analyzes completed trades to classify mistakes, extract lessons, and calibrate confidence.
+- **Institutional Guardrails**: Enforces strict risk management rules, including "NO_TRADE" recommendations when confidence is low.
 
-**Use Lovable**
+## 🛠 Technology Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Frontend**: React 18, TypeScript, Vite
+- **UI/UX**: shadcn/ui, Tailwind CSS (Custom Trading Theme), Lucide Icons
+- **State Management**: TanStack Query
+- **Architecture**: Modular "Reasoning Engine" decoupled from UI
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🏁 Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v18+)
+- npm or yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd Optix-pro
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+4. **Verify the Engine**
+   Run the integrated test scenarios to verify the reasoning engine's logic:
+   ```bash
+   npx tsx src/engine/examples.ts
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📂 Project Structure
 
-**Edit a file directly in GitHub**
+- `src/engine/`: Core deterministic reasoning logic (Regime, Strategy, Monitor, Analyzer)
+- `src/components/trading/`: UI components for the trading dashboard
+- `src/pages/`: Application routes and pages
+- `src/hooks/`: Custom React hooks
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛡️ Philosophy
 
-**Use GitHub Codespaces**
+- **Capital Preservation > Profit**: Survival is the primary objective.
+- **Deterministic & Auditable**: Every recommendation is traceable to specific data points.
+- **No Black Boxes**: All logic is explainable and distinct from "AI hallucinations".
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+*Note: This system is currently in prototype/paper-trading mode. Integration with live market data feeds is required for production use.*
